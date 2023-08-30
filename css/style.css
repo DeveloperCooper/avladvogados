@@ -1289,6 +1289,10 @@ footer {
     line-height: 2.7rem;
 }
 
+.footerItem ul li {
+    padding-bottom: .5rem;
+}
+
 .footerList li a {
     color: var(--txtPrimary);
     font-size: 1.7rem;
