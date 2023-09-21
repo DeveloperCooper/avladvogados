@@ -917,8 +917,8 @@ li, a {
 }
 
 .galleryItems img {
-    width: 100%;
-    height: 100%;
+    width: 300px !important;
+    height: 346.14px !important;
     object-fit: cover;
     border-radius: 2px;
 }

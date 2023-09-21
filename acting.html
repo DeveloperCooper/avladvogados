@@ -179,6 +179,14 @@
 
     <!--Icons-->
     <script src="https://kit.fontawesome.com/7a281ed243.js" crossorigin="anonymous"></script>
+
+    <script>
+        function disableRightClick(event) {
+            event.preventDefault();
+        }
+
+        document.addEventListener('contextmenu', disableRightClick);
+    </script>
 </body>
 
 </html>

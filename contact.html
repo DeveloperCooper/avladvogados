@@ -89,31 +89,31 @@
             </div> <!--contactInfo-->
         </div>
         <br>
+        <form action="https://api.web3forms.com/submit" method="POST">
         <div class="contactsContainer">
-            
-
-            <form action="#"></form>
+            <input type="hidden" name="redirect" value="https://avladvogados.com/thanks">
+                <input type="hidden" name="access_key" value="a0afbd0e-1bc6-4e39-a45b-cb59952dc1c8">
                 <div class="contactInfo">
                 <h3 class="formTitle">Deixe sua mensagem</h3>
                 <div class="mainUserInfo">
                     <div class="userInputBox">
-                        <input type="text" required name="fullName" id="fullName" placeholder="Nome completo">
+                        <input type="text" required name="Nome" id="fullName" placeholder="Nome completo">
                     </div> <!--userInputBox-->
 
                     <div class="userInputBox">
-                        <input type="text" required name="topic" id="topic" placeholder="Assunto">
+                        <input type="text" required name="Assunto" id="topic" placeholder="Assunto">
                     </div> <!--userInputBox-->
 
                     <div class="userInputBox">
-                        <input type="text" required name="email" id="email" placeholder="Email">
+                        <input type="text" required name="Email" id="email" placeholder="Email">
                     </div> <!--userInputBox-->
 
                     <div class="userInputBox">
-                        <input type="tel" required name="telefone" id="telefone" placeholder="Telefone com DDD">
+                        <input type="tel" required name="Telefone" id="telefone" placeholder="Telefone com DDD">
                     </div> <!--userInputBox-->
 
                     <div class="userInputBox">
-                        <textarea name="textarea" id="textarea" cols="30" rows="10"
+                        <textarea name="Mensagem" id="textarea" cols="30" rows="10"
                             placeholder="Escreva sua mensagem"></textarea>
                     </div> <!--userInputBox-->
                     <div class="formSubmitBtn">
@@ -202,6 +202,15 @@
     <script src="./js/script.js"></script>
 
     <!--Icons-->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://kit.fontawesome.com/7a281ed243.js" crossorigin="anonymous"></script>
+
+    <script>
+        function disableRightClick(event) {
+            event.preventDefault();
+        }
+
+        document.addEventListener('contextmenu', disableRightClick);
+    </script>
 </body>
 </html>

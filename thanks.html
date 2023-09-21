@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado!</title>
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Inter;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #214032;
+            margin: 0 2rem;
+        }
+
+        .thanksContainer {
+            text-align: center;
+            color: #fff;
+        }
+
+        .thanksContainer img {
+            width: 20rem;
+            margin-bottom: 3rem;
+        }
+
+        .thanksContainer h1 {
+            font-size: 2.3rem;
+        }
+
+        .thanksContainer p {
+            font-size: 1.2rem;
+            font-weight: 200;
+            margin: 0;
+        }
+
+        .thanksContainer button {
+            background: #fff;
+            border: transparent;
+            width: 20rem;
+            height: 2.4rem;
+            border-radius: 5px;
+            font-size: 1.4rem;
+            cursor: pointer;
+            transition: all .5s ease;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+
+        .thanksContainer button:hover {
+            transform: scale(1.03);
+            transition: all .5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thanksContainer">
+        <img src="./images/LogoAVL.webp" alt="AVL Advogados">
+        <h1>Obrigado!</h1>
+        <p>Sua mensagem foi enviada com sucesso.</p>
+        <p>Entraremos em contato em breve!</p>
+        <br>
+        <button>Voltar</button>
+    </div> <!--thanksContainer-->
+
+
+    <script>
+        function disableRightClick(event) {
+            event.preventDefault();
+        }
+
+        document.addEventListener('contextmenu', disableRightClick);
+    </script>
+</body>
+
+</html>
